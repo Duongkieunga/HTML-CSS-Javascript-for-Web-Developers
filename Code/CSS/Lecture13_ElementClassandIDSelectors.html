@@ -1,0 +1,43 @@
+<!-- The browser uses selector API to traverse the DOM - Document Object Model, and pick out the elements matching the selector.
+    Types of selectors: element, class, ID selectors, ...
+-->
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <tiTle>Lecture 13: Element, Class, and ID selectors</title>
+        <style>
+            h2 {
+                color: red;
+                text-align: center;
+            }
+            .hightlight {
+                font-size: 20px;
+                font-weight: bold;
+                font-style: italic;
+                background-color: green;
+                opacity: .6;
+            }
+            #mainPoint {
+                font-size: 24px;
+                font-weight: bold;
+                background-color: red;
+                opacity: .7;
+            }
+            p, h1 {
+                color: blue;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Simple Selectors (h1)</h1>
+        <h2>Subheading 1 (h2)</h2>
+        <p class="highlight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus amet alias est? Nobis cum quasi at soluta odit, maiores quaerat dolores expedita ex nemo ea repellendus dolorem sed maxime quos?</p>
+        <p class="highlight">Paragraph with attribute class=&quot;highlight&quot;. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <h2>Subheading 2 (h2)</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi nemo ipsum dolores vel modi magnam veniam alias at nam. Voluptatem officiis dolor dolorem aspernatur dolorum modi ipsa, nobis animi aut!</p>
+        <div>This is the main point of the entire article. So, attribute 
+        <span id="mainPoint">id= &quot; mainPoint&quot;.</span> </div>
+    </body>
+</html>

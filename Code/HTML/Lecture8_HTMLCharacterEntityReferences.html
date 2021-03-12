@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Entities</title>
+    </head>
+    <body>
+        <h1>Don't be afraid to be <then a 100% sucess & >more:</h1>
+        <h1>Don't be afraid to be &lt; then a 100% sucess &amp; &gt;more:</h1>
+        <!-- because the browser is interpreting this. 
+            It doesn't quite understand what kind of a tag that 
+            is and basically skips just about everything
+            between the left angle bracket and the right angle 
+            bracket and just says the word more.
+        -->
+    </body>
+    <p>
+        &quot;It is not the critic who counts; not the man who points out how the strong man stumbles,
+        or where the doer of deeds could have done them better. The credit belongs to the man who is actually 
+        in the arena, whose face is marred by dust and sweat and blood; who strives valiantly; who errs, who 
+        comes short again and again, because there is no effort without error and shortcoming; but who does 
+        actually strive to do the deeds; who knows great enthusiasms, the great devotions; who spends himself
+        in a worthy cause; who at the best knows in the end the triumph of high achievement, and who at the 
+        worst, if he fails, at least fails while daring greatly, so that his place shall never be with those
+        cold and timid souls who neither know victory&nbsp;nor&nbsp;defeat.&quot;
+      </p>
+      <!-- &nbsp; - (non-breaking space or removing all spaces between the words) 
+                    The words always stay the same. So if it is going to wrap, it should 
+                    either not wrap at all or wrap all together. stay in the same line, 
+                    but they will not be separated anymore
+        -->
+      <p>Theodor Roosevelt 1910 &copy; Copyright</p>
+</html>
+<!-- 3 Characters You Should Always Escape, with the HTML entity reference
+    < | &lt;
+    > | &gt;
+    & | &amp;
+ -->
+ <!-- 
+     Summary
+        HTML Entities
+            Help avoid rendering issues
+            Safeguard against more limited character encoding
+            Provide characters not available on keyboard
+  -->
