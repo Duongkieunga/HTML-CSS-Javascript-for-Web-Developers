@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- html: position set to relative by default -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Lecture 22: Relative and Absolute Element Positioning</title>
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            h1{
+                margin-bottom: 15px;
+            }
+            div#container{
+                background-color: #00FFFF;
+                /* 3 */
+                /* position: absolute; */
+                /* position: relative;
+                top: 60px; */
+            }
+            p{
+                width: 50px;
+                height: 50px;
+                border: 1px solid black;
+                margin-bottom: 15px;
+            }
+            #p1{
+                background-color: #A52A2A;
+                /* 1 */
+                /* And here we go so we move this element form here to here and as you can see this element is not taken out of document flow, because te rest of the elements are still sitting in their original spots and this space is still completely unoccupied. */
+                position: relative;
+                top: 65px;
+                left: 65px;
+            }
+            #p2{
+                background-color: #DEB887;
+            }
+            #p3 {
+                background-color: #5F9EA0;
+                /* 2 */
+                /* it was taken out of the regular normal document flow but it's not quite where we wanted it. We wanted it right here in its original, in the spot where the maroon box used to be, but yet it's flush, right flush with the browsers edges. 
+                because : absolute positioning needs a relative or an absolute parent or an ancestor
+                */
+                position: absolute;
+                top: 10px;
+                right: 20px;
+            }
+            #p4 {
+                background-color: #FF7F50;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Positioning Elements</h1>
+
+        <div id="container">
+          <p id="p1"></p>
+          <p id="p2"></p>
+          <p id="p3"></p>
+          <p id="p4"></p>
+        </div>
+    </body>
+</html>

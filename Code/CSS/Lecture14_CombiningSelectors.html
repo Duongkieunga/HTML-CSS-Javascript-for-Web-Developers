@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Lecture 14: Element, Class, and ID Selectors</title>
+        <style>
+            /* all with class="highlight" */
+            .highlight{
+                background-color: green;
+            }
+            /* all p elements with class="highlight" */
+            p.highlight{
+                font-style: italic;
+            }
+            /* all elements with class 'highlight' as well as with class 'mainpoint'. */
+            .highlight.mainpoint{
+                color: red;
+                background-color: black;
+            }
+            /* any article element which is a direct child of a section element,i.e., any article element whose immediate parent is a section element. */
+            section > article{
+                color: green;
+                font-size: 24px ;
+            }
+            /* any h2 element which is a direct child of a section element,i.e., any h2 element whose immediate parent is a section element. */
+            section > h2{
+                color: green;
+            }
+            /* all li elements that are inside a section element. */
+            section li {
+            color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="highlight">Element with Class Selector</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus amet alias est? Nobis cum quasi at soluta odit, maiores quaerat dolores expedita ex nemo ea repellendus dolorem sed maxime quos?</p>
+        <p class="highlight">This is P with CLASS="highlight"</p>
+        <div class="mainpoint highlight">This is the main point of the entire article.
+        </div>
+
+        <h1>Child Selector</h1>
+        <section>
+            <h2>Subheading 1</h2>
+            <div>
+                <article>ARTICLE which inside DIV, which is inside SECTION</article>
+            </div>
+        </section>
+        <section>
+            <article>ARTICLE as a direct child of the SECTION element.</article>
+        </section>
+        <h2>Subheading 2</h2>
+
+        <h1>Descendant Selector</h1>
+        <section>
+        Table of contents:
+        <ul>
+            <li>Article 1</li>
+            <li>Article 2</li>
+            <li>Article 3</li>
+        </ul>
+        </section>
+        <article>
+        Shopping List:
+        <ul>
+            <li>Cookies</li>
+            <li>Cake</li>
+            <li>Pie</li>
+        </ul>
+        </article>
+    </body>
+</html>
