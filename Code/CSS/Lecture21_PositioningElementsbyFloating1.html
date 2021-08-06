@@ -17,8 +17,8 @@
             /* child of div tag is 4 tags p --> float left
                 margin betweeb p tags = 10px
              */
-            /* float: left;
-            margin-right: 10px; */
+            float: left;
+            margin-right: 10px;
         }
 
         #p1 {
@@ -27,9 +27,10 @@
             /* margin collapses when it is touching the margin of another element. But
                 float element: the margins never collapse.
             */ 
-            /* float: right; */ 
+            /* float: right;  */
             float: left;
         }
+
         #p2 {
             background-color: #DEB887;
             float: left;
@@ -44,6 +45,7 @@
         #p4 {
             background-color: #FF7F50;
         }
+        
         /* 3 */
         section{
             /* clear: telling the browser that the section element is announcing that nothing should be allowed to be floating to the left of it 
@@ -58,10 +60,11 @@
         <h1>Floating Elements</h1>
 
         <div>
-        <p id="p1"></p>
-        <p id="p2"></p>
-        <p id="p3"></p>
-        <p id="p4"></p>
+            div
+        <p id="p1">1</p>
+        <p id="p2">2</p>
+        <p id="p3">3</p>
+        <p id="p4">4</p>
         <section>This is regular content continuing after the the paragraph boxes.</section>
         </div>
 

@@ -29,7 +29,7 @@ var voters = [
     })
     return array.voted
   }
-//   console.log(totalVotes(voters))
+  console.log(totalVotes(voters), voters)
 
 
 

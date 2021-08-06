@@ -9,11 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "co": "^4.6.0",
     "readline-sync": "^1.4.10",
     "request": "^2.88.2",
     "request-promise": "^4.2.6",
-    "vue-axios": "^3.0.1"
+    "vue-axios": "^3.2.5"
   }
 }

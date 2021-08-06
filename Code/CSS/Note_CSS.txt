@@ -1,0 +1,26 @@
+- tag{}
+- tag1 > tag2{}: any tag2 element which is a direct child of a tag1 element,i.e., any tag2 element whose immediate parent is a tag1 element.
+- tag1 tag2{}: all tag2 elements that are inside a tag1 element
+- #tag: id
+- .tag: class
+- color
+- font-size
+- text-align
+- width
+- height
+- font-weight: bold, border, lighter,...
+- font-style: italic, normal, ...
+- background-color
+- opacity
+- display: block; /*change defaule display of a element*/
+- text-decoration: none; /*remove defaule type of every link*/
+- text-transform: uppercase;
+- margin-bottom
+- tag:nth pseodo-selector: target a particular element within a list
+- tag:activate: is that state when the user actually clicks on the element but hasn't yet released his click
+- tag:hover: when the users hover over the element
+- tag:link: link is at the way it is link (defaule type: underline link)
+- tag:visited: visited means that HTML allows that after you click a particular link that a different stype can be applied to that link than an unclicked link 
+- cursor: pointer;
+- font-family: Arial, Helvetica, sans-serif;
+- !important: important basically says, it doesn't matter what the specificity is, I want to override everythong and make this property they way I'm defining it

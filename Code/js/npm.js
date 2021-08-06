@@ -12,5 +12,5 @@ var pet = {};
 var weight = readlineSync.question("Weight?: ")
 pet.weight = parseFloat(weight)
 console.log(pet)
-// var username = readlineSync.question('May I have your name? ');
-// console.log('Hi ' +username + '!' );
+var username = readlineSync.question('May I have your name? ');
+console.log('Hi ' +username + '!' );

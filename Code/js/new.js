@@ -2,7 +2,7 @@
 var today = new Date()
 // console.log(today)
 
-// Create a new obkect, object literal
+// Create a new object, object literal
 var mouse = {
     weight :0.2,
     getWeight : function(){
